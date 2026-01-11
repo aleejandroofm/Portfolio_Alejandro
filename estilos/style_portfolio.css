@@ -22,7 +22,7 @@ body {
     animation: fadeIn 1s ease-in;
 }
 
-/* --- HEADER & NAV (Flexbox) --- */
+/* --- Cabecera y Navegación --- */
 header {
     background-color: var(--primario);
     color: var(--blanco);
@@ -39,7 +39,7 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex;           /* Flexbox */
+    display: flex;           
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem;
@@ -59,7 +59,7 @@ nav a:hover {
     background-color: var(--secundario);
 }
 
-/* --- MAIN CONTENT --- */
+/* --- Contenido Principal --- */
 main {
     flex: 1;
     width: 90%;
@@ -83,9 +83,9 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* --- GRID LAYOUT (Para la experiencia) --- */
+/* --- Grid (Para la experiencia) --- */
 section:has(article) {
-    display: grid;           /* Grid */
+    display: grid;           
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
@@ -98,7 +98,7 @@ article {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* --- TABLAS --- */
+/* --- Tablas --- */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -120,7 +120,7 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* --- FORMULARIOS --- */
+/* --- Formularios --- */
 fieldset {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -157,7 +157,7 @@ input[type="submit"]:hover {
     background-color: #2980b9;
 }
 
-/* --- FOOTER --- */
+/* --- Pie de Página --- */
 footer {
     background-color: var(--primario);
     color: var(--blanco);
@@ -166,13 +166,13 @@ footer {
     margin-top: auto;
 }
 
-/* --- ANIMACIÓN --- */
+/* --- Animación --- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- RESPONSIVE (Móvil y Tablet) --- */
+/* --- Responsive (Móvil y Tablet) --- */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -194,4 +194,5 @@ footer {
         width: 95%;
         padding: 1rem;
     }
+
 }
