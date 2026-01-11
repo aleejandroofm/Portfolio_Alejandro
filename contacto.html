@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style_portfolio.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <h1><u>💌 Contacto</u></h1>
+        <p>Si deseas contactar conmigo, rellena el formulario que te he dejado a continuación:</p>
+    </header>
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2><u>Formulario de Contacto</u></h2>
+            <form action="guardar_datos.php" method="post">
+                <!-- NOMBRE -->
+            <fieldset>
+                <legend>Nombre del Usuario</legend>
+                <label for="nombre"><u>Nombre:</u></label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br><br>
+            </fieldset>
+
+            <!-- USAMOS FIELDSET PARA MEJORAR EL VISUAL DE LA WEB -->
+            
+            <fieldset>
+                <legend>📘 Motivo del mensaje</legend>
+                <label for="motivo"<strong>Seleccione un motivo:</strong></label><br>
+                <select id="motivo" name="motivo">
+                    <option value="colaboración">Solicitud de colaboración</option>
+                    <option value="sugerencia">Propuestas o sugerencias</option>
+                    <option value="trabajo">Oferta de trabajo</option>
+                    <option value="otro">Otro motivo</option>
+                </select>
+            </fieldset>
+                <!-- CORREO -->
+            <fieldset>
+                <legend>👤 Información de Contacto</legend>
+                <label for="email"><u>Email:</u></label><br>
+                <input type="email" id="email" name="email" placeholder="Inserta un correo"><br><br>
+            </fieldset>
+
+                <!-- ASUNTO -->
+            <fieldset>
+                <legend>📝 Asunto del Mensaje</legend>
+                <label for="asunto"><u>Asunto:</u></label><br>
+                <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto"><br><br>
+            </fieldset>
+                <!-- MENSAJE -->
+            <fieldset>
+                <legend>📝 Tu mensaje</legend>
+                <label for="mensaje"><u>Mensaje:</u></label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+            </fieldset>
+                <input type="submit" value="Enviar">
+
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2025 Portfolio DAW - Contacto Alejandro Ferrándiz Martínez</p>
+    </footer>
+    
+</body>
+</html>

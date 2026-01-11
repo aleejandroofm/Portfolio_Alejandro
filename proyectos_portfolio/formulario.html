@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style_portfolio.css">
+    <title>Formulario</title>
+   
+</head>
+<body>
+
+    <h1>Formulario</h1>
+
+    <form action="gestion.php" method="POST" enctype="multipart/form-data">
+        <p><b>--- Datos personales ---</b></p>
+        <hr>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Saul" required>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Ej: Goodman" required>
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 612345678" pattern="[0-9]{9}" title="Debes introducir un número de teléfono de 9 dígitos" required>
+
+        <p><b>--- Otros datos ---</b></p>
+        <hr>
+
+        <label>Hombre <input type="radio" name="hm" value="h" checked required></label>
+        <label>Mujer <input type="radio" name="hm" value="m"></label>
+        <br><br>
+
+        <label>Música <input type="checkbox" name="aficiones[]" value="musica"></label>
+        <label>Juegos <input type="checkbox" name="aficiones[]" value="juegos"></label>
+        <br><br>
+
+        <label for="so">SO:</label>
+        <select id="so" name="so" required>
+            <option value="" selected disabled>---selecciona---</option>
+            <option value="windows">Windows</option>
+            <option value="macos">macOS</option>
+            <option value="linux">Linux</option>
+        </select>
+        <br><br>
+
+        <label for="archivo_img">Subir archivo (Imágenes):</label>
+        <input type="file" id="archivo_img" name="archivo_img" accept="image/*" required>
+        <br><br>
+
+        <label for="archivo_pdf">Subir archivos (PDF Múltiple):</label>
+        <input type="file" id="archivo_pdf" name="archivo_pdf[]" accept=".pdf,application/pdf" multiple required>
+        <br><br>
+
+        <label for="observaciones">Observaciones</label><br>
+        <textarea id="observaciones" name="observaciones" rows="6" placeholder="Escribe aquí cualquier comentario..."></textarea>
+        <br><br>
+        <hr>
+
+        <input type="submit" value="Enviar">
+
+        <input type="reset" value="Limpiar">
+
+    </form>
+
+</body>
+</html>
+   
